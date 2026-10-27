@@ -2,7 +2,7 @@
   min-height: 100vh;
   background: #020b14;
   color: #edf3ff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   display: flex;
   justify-content: center;
   padding: 14px 0 30px;
@@ -56,7 +56,7 @@
 }
 
 .avatar::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   background: repeating-linear-gradient(
@@ -70,7 +70,7 @@
 }
 
 .avatar::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 52%;
   height: 52%;
@@ -244,11 +244,12 @@
 }
 
 .chip {
-  min-width: 90px;
+  min-width: 120px;
   min-height: 54px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   padding: 10px 14px;
   border-radius: 12px;
   border: 1px solid rgba(255,255,255,0.08);
@@ -258,12 +259,32 @@
   box-shadow: inset 0 0 8px rgba(255,255,255,0.04);
 }
 
-.color1 { background: linear-gradient(135deg, #ff7b5c, #ff5336); }
-.color2 { background: linear-gradient(135deg, #4f8cff, #2d64e9); }
-.color3 { background: linear-gradient(135deg, #f7d154, #ebbd17); color: #111827; }
-.color4 { background: linear-gradient(135deg, #22c4ff, #0aa0d9); }
-.color5 { background: linear-gradient(135deg, #4bd66c, #1fb55a); }
-.color6 { background: linear-gradient(135deg, #6d7bf7, #4f5ce8); }
+.logo {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.html { background: linear-gradient(135deg, #ff7b5c, #ff5336); }
+.css { background: linear-gradient(135deg, #4f8cff, #2d64e9); }
+.js { background: linear-gradient(135deg, #f7d154, #ebbd17); color: #111827; }
+.react { background: linear-gradient(135deg, #22c4ff, #0aa0d9); }
+.next { background: linear-gradient(135deg, #0f172a, #111827); }
+.ts { background: linear-gradient(135deg, #3f87e7, #2a5bd5); }
+.go { background: linear-gradient(135deg, #35d0ff, #0aa8d8); color: #051b2d; }
+.node { background: linear-gradient(135deg, #4bd66c, #1fb55a); }
+.express { background: linear-gradient(135deg, #111827, #1f2937); }
+.mongodb { background: linear-gradient(135deg, #68d66a, #2f9e44); }
+.postgres { background: linear-gradient(135deg, #6da8ff, #3b74db); }
+.git { background: linear-gradient(135deg, #ff8a5c, #e45734); }
 
 @media (max-width: 960px) {
   .shell {
