@@ -82,7 +82,7 @@ const logoMap: Record<SkillKind, ReactNode> = {
   ),
   next: (
     <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path fill="#111827" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12c2.9 0 5.7-1 7.9-2.8L10.1 7.5v9.2h2.4V9.9l7.6 10.8A11.9 11.9 0 0 0 24 12c0-6.6-5.4-12-12-12zm-1.9 15.5h-2.3V8.5h2.3v7z" />
+      <path fill="#fff" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12c2.9 0 5.7-1 7.9-2.8L10.1 7.5v9.2h2.4V9.9l7.6 10.8A11.9 11.9 0 0 0 24 12c0-6.6-5.4-12-12-12zm-1.9 15.5h-2.3V8.5h2.3v7z" />
     </svg>
   ),
   ts: (
@@ -102,7 +102,7 @@ const logoMap: Record<SkillKind, ReactNode> = {
   ),
   express: (
     <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path fill="#111827" d="M3 5.5h18v13H3v-13zm2 2v9h14v-9H5zm2.5 2.5h9v2.5h-9v-2.5zm0 4h6.5v2H7.5v-2z" />
+      <path fill="#fff" d="M3 5.5h18v13H3v-13zm2 2v9h14v-9H5zm2.5 2.5h9v2.5h-9v-2.5zm0 4h6.5v2H7.5v-2z" />
     </svg>
   ),
   mongodb: (

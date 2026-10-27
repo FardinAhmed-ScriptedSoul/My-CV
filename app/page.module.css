@@ -28,12 +28,12 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-top: none;
   display: grid;
-  grid-template-columns: 320px 1fr;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  grid-template-columns: 318px minmax(0, 1fr);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
 }
 
 .sidebar {
-  padding: 30px 20px 18px;
+  padding: 22px 20px 18px;
   border-right: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -84,11 +84,11 @@
 }
 
 .name {
-  margin: 12px 0 8px;
-  font-size: clamp(2rem, 2vw, 2.5rem);
+  margin: 10px 0 8px;
+  font-size: clamp(2.1rem, 2vw, 2.65rem);
   font-weight: 800;
-  line-height: 1.15;
-  letter-spacing: -0.04em;
+  line-height: 1.1;
+  letter-spacing: -0.05em;
 }
 
 .username {
@@ -129,7 +129,7 @@
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   color: #dfeafc;
-  font-size: 0.88rem;
+  font-size: 0.86rem;
 }
 
 .content {
@@ -140,13 +140,13 @@
   background: rgba(15, 23, 31, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-bottom: none;
-  border-radius: 12px 12px 0 0;
-  padding: 10px 16px;
+  border-radius: 10px 10px 0 0;
+  padding: 11px 16px;
 }
 
 .readmePath {
   color: #dfeafc;
-  font-size: 1.02rem;
+  font-size: 1.04rem;
   font-weight: 600;
 }
 
@@ -161,7 +161,7 @@
 }
 
 .intro {
-  padding-top: 22px;
+  padding-top: 26px;
 }
 
 .introRow {
@@ -178,52 +178,54 @@
 
 .headline {
   margin: 0;
-  font-size: clamp(2.2rem, 2.5vw, 3.1rem);
+  font-size: clamp(2.2rem, 2.2vw, 3rem);
   line-height: 1.1;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.06em;
+  font-weight: 800;
 }
 
 .section {
-  margin-top: 22px;
+  margin-top: 18px;
   padding-top: 18px;
   border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 .sectionTitle {
   margin: 0 0 16px;
-  font-size: clamp(1.9rem, 2vw, 2.8rem);
-  letter-spacing: -0.04em;
+  font-size: clamp(2rem, 2vw, 2.7rem);
+  letter-spacing: -0.06em;
+  font-weight: 800;
 }
 
 .text {
   margin: 0 0 14px;
-  color: #ecf3ff;
-  line-height: 1.8;
-  font-size: 1.05rem;
+  color: #edf3ff;
+  line-height: 1.78;
+  font-size: 1.06rem;
 }
 
 .bulletList {
   list-style: disc;
-  padding-left: 20px;
+  padding-left: 26px;
   margin: 0;
 }
 
 .bulletList li {
   margin-bottom: 10px;
   color: #edf3ff;
-  line-height: 1.8;
+  line-height: 1.72;
   font-size: 1.08rem;
 }
 
 .skillsWrap {
-  margin-top: 22px;
-  padding-top: 18px;
+  margin-top: 18px;
+  padding-top: 20px;
   border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 .skillGroups {
   display: grid;
-  gap: 30px;
+  gap: 26px;
 }
 
 .skillGroup {
@@ -233,8 +235,9 @@
 
 .skillGroupTitle {
   margin: 0;
-  font-size: 1.08rem;
+  font-size: 1.1rem;
   font-weight: 700;
+  color: #edf3ff;
 }
 
 .chips {
@@ -244,8 +247,8 @@
 }
 
 .chip {
-  min-width: 120px;
-  min-height: 54px;
+  min-width: 112px;
+  min-height: 52px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -254,17 +257,18 @@
   border-radius: 12px;
   border: 1px solid rgba(255,255,255,0.08);
   color: #fff;
-  font-size: 0.95rem;
+  font-size: 0.94rem;
   font-weight: 700;
   box-shadow: inset 0 0 8px rgba(255,255,255,0.04);
 }
 
 .logo {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .logo svg {
@@ -287,6 +291,10 @@
 .git { background: linear-gradient(135deg, #ff8a5c, #e45734); }
 
 @media (max-width: 960px) {
+  .page {
+    padding-top: 10px;
+  }
+
   .shell {
     grid-template-columns: 1fr;
   }
